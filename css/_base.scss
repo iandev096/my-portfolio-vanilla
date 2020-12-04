@@ -1,0 +1,16 @@
+body {
+  background-color: $lightbg;
+  position: relative;
+  overflow-x: hidden;
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: $light;
+  background: $primary;
+}
+
+::selection {
+  color: $light;
+  background: $primary;
+}

@@ -1,0 +1,18 @@
+.md-down-show {
+  display: none;
+  @include bp(md) {
+    display: initial;
+  }
+}
+
+.sm-down-show {
+  display: none;
+  @include bp(sm) {
+    display: initial;
+  }
+}
+
+.no-scroll {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}

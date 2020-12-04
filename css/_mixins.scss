@@ -1,0 +1,62 @@
+// portfolio bp
+// I am using a desktop first approach
+// default is large and xl desktops
+// 941px - tablets and medium laptops - md
+// 768px - Phones and tablet landscape - sm
+// 600px - phones Portrait - xs
+
+@mixin bp($size) {
+  @if $size == xs {
+    @media (max-width: 600px) {
+      @content;
+    }
+  } @else if $size == sm {
+    @media (max-width: 768px) {
+      @content;
+    }
+  } @else if $size == md {
+    @media (max-width: 940.99px) {
+      @content;
+    }
+  }
+}
+
+@mixin container-padding-bp {
+  @include bp(md) {
+    padding-left: $container-padding-md;
+    padding-right: $container-padding-md;
+  }
+
+  @include bp(sm) {
+    padding-left: $container-padding-sm;
+    padding-right: $container-padding-sm;
+  }
+
+  @include bp(xs) {
+    padding-left: $container-padding-xs;
+    padding-right: $container-padding-xs;
+  }
+}
+
+@mixin container {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  padding-left: $container-padding-lg;
+  padding-right: $container-padding-lg;
+
+  @include container-padding-bp;
+}
+
+@mixin section-padding-y {
+  padding-top: 124px;
+  padding-bottom: 124px;
+}
+
+@mixin project-thumb {
+  border-radius: 29px;
+  box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.212);
+  object-fit: contain;
+}

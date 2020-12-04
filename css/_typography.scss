@@ -1,0 +1,15 @@
+.h {
+  &--sub {
+    color: $primary;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.7px;
+  }
+}
+
+.t {
+  &--mono {
+    font-family: consolas monospace, "Lucida Console";
+  }
+}

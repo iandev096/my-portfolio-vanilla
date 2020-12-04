@@ -1,0 +1,49 @@
+.featured {
+  width: 100vw;
+  overflow: hidden;
+  background-color: $lightbg;
+  width: 100vw;
+
+  &__container {
+    @include container;
+    @include section-padding-y;
+
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__left {
+    flex: 40% 0;
+
+    & > *:not(svg) {
+      z-index: 10;
+      position: relative;
+    }
+  }
+
+  &__right {
+    flex: 50% 0;
+    min-height: 279px;
+
+    & img {
+      @include project-thumb;
+    }
+  }
+
+  &__heading {
+    margin-bottom: 12px;
+  }
+
+  &__content {
+    color: $gray;
+    margin-bottom: 12px;
+  }
+
+  &__bg-figures {
+    position: absolute;
+    top: 48px;
+    left: 21px;
+    height: auto;
+    width: 344px;
+  }
+}

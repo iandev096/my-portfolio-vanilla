@@ -1,0 +1,17 @@
+<svg class="navbar__menu sm-down-show" id="menu" xmlns="http://www.w3.org/2000/svg" width="80.73" height="67.463"
+  viewBox="0 0 80.73 67.463">
+  <path id="top" d="M73.3,64.267H7.429a7.432,7.432,0,0,0,0,14.864H73.3a7.432,7.432,0,0,0,0-14.864Z"
+    transform="translate(0 -64.267)" fill="#f6f6f6" />
+  <path opacity=0 id="closed-top" d="M73.3,0H7.429a7.432,7.432,0,0,0,0,14.864H73.3A7.432,7.432,0,0,0,73.3,0Z"
+    transform="translate(6 57.085) rotate(-45)" fill="#f6f6f6" />
+
+  <path id="mid" d="M73.3,208.867H7.429a7.432,7.432,0,0,0,0,14.863H73.3a7.432,7.432,0,0,0,0-14.863Z"
+    transform="translate(0 -186.067)" fill="#f6f6f6" />
+  <path id="closed-mid" d="M0,208.867H0Z" transform="translate(33.798 -152.27)" fill="#f6f6f6" />
+
+
+  <path id="bottom" d="M73.3,353.467H7.429a7.432,7.432,0,0,0,0,14.863H73.3a7.432,7.432,0,0,0,0-14.863Z"
+    transform="translate(0 -307.867)" fill="#f6f6f6" />
+  <path opacity=0 id="bottom" d="M73.3,0H7.429a7.432,7.432,0,0,0,0,14.864H73.3A7.432,7.432,0,0,0,73.3,0Z"
+    transform="translate(16.51 0.039) rotate(45)" fill="#f6f6f6" />
+</svg>

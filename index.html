@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isaac Anyimiah</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div class="navbar" id="top">
+    <div class="navbar__container">
+      <nav class="navbar__left">
+        <a href="" class="navbar__brand">Isaac Anyimiah</a>
+        <ol class="navbar__items">
+          <li class="navbar__item"><a class="navbar__link" href="#featured">Featured</a></li>
+          <li class="navbar__item"><a class="navbar__link" href="#my-skills">My Skills</a></li>
+          <li class="navbar__item"><a class="navbar__link" href="#my-works">My Works</a></li>
+          <li class="navbar__item md-down-show"><a class="navbar__link" href="#contact">Contact</a></li>
+        </ol>
+        <div data-state="OPENED" class="navbar__menu  sm-down-show">
+          <svg class="navbar__menu--opened" id="menu" xmlns="http://www.w3.org/2000/svg" width="80.73" height="67.463"
+            viewBox="0 0 80.73 67.463">
+            <path id="top" d="M73.3,64.267H7.429a7.432,7.432,0,0,0,0,14.864H73.3a7.432,7.432,0,0,0,0-14.864Z"
+              transform="translate(0 -64.267)" fill="#f6f6f6" />
+            <path id="mid" d="M73.3,208.867H7.429a7.432,7.432,0,0,0,0,14.863H73.3a7.432,7.432,0,0,0,0-14.863Z"
+              transform="translate(0 -186.067)" fill="#f6f6f6" />
+            <path id="bottom" d="M73.3,353.467H7.429a7.432,7.432,0,0,0,0,14.863H73.3a7.432,7.432,0,0,0,0-14.863Z"
+              transform="translate(0 -307.867)" fill="#f6f6f6" />
+          </svg>
+          <svg class="navbar__menu--closed" id="menu" xmlns="http://www.w3.org/2000/svg" width="80.73" height="67.463"
+            viewBox="0 0 80.73 67.463">
+            <path id="top" d="M73.3,0H7.429a7.432,7.432,0,0,0,0,14.864H73.3A7.432,7.432,0,0,0,73.3,0Z"
+              transform="translate(0 57.085) rotate(-45)" fill="#f6f6f6" />
+            <path id="mid" d="M0,208.867H0Z" transform="translate(33.798 -152.27)" fill="#f6f6f6" />
+            <path id="bottom" d="M73.3,0H7.429a7.432,7.432,0,0,0,0,14.864H73.3A7.432,7.432,0,0,0,73.3,0Z"
+              transform="translate(10.51 0.039) rotate(45)" fill="#f6f6f6" />
+          </svg>
+
+        </div>
+      </nav>
+      <nav class="navbar__right">
+        <ol class="navbar__icons">
+          <li class="navbar__icon">
+            <a href="#contact" role='email'>
+              <svg xmlns="http://www.w3.org/2000/svg" width="44.846" height="35.236" viewBox="0 0 44.846 35.236">
+                <path
+                  d="M4.3,65.681q.851.6,5.13,3.566t6.557,4.567q.25.176,1.063.763t1.351.951q.538.363,1.3.813a7.551,7.551,0,0,0,1.439.675,3.965,3.965,0,0,0,1.251.225h.05a3.969,3.969,0,0,0,1.251-.225,7.558,7.558,0,0,0,1.439-.675q.763-.451,1.3-.813t1.351-.951q.813-.589,1.064-.763,2.3-1.6,11.712-8.133A11.888,11.888,0,0,0,43.619,62.6a6.609,6.609,0,0,0,1.227-3.778,4.038,4.038,0,0,0-4-4H4a3.574,3.574,0,0,0-2.965,1.3A5.051,5.051,0,0,0,0,59.374a5.846,5.846,0,0,0,1.376,3.416A12.422,12.422,0,0,0,4.3,65.681Z"
+                  transform="translate(0 -54.82)" />
+                <path
+                  d="M42.343,186.614q-8.208,5.555-12.462,8.634-1.426,1.051-2.315,1.639a14.283,14.283,0,0,1-2.365,1.2,7.2,7.2,0,0,1-2.752.613H22.4a7.2,7.2,0,0,1-2.753-.613,14.29,14.29,0,0,1-2.365-1.2q-.888-.588-2.315-1.639-3.379-2.477-12.438-8.634A13.255,13.255,0,0,1,0,184.437v19.87a3.855,3.855,0,0,0,1.176,2.828A3.855,3.855,0,0,0,4,208.311H40.842a4.016,4.016,0,0,0,4-4v-19.87A13.8,13.8,0,0,1,42.343,186.614Z"
+                  transform="translate(0 -173.076)" />
+              </svg>
+            </a>
+          </li>
+          <li class="navbar__icon">
+            <a href="#" role='linkedin'>
+              <svg xmlns="http://www.w3.org/2000/svg" width="38.439" height="38.439" viewBox="0 0 38.439 38.439">
+                <path
+                  d="M36.327,2.114A6.941,6.941,0,0,0,31.235,0H7.21A6.943,6.943,0,0,0,2.117,2.114,6.943,6.943,0,0,0,0,7.207V31.232a6.943,6.943,0,0,0,2.114,5.093A6.942,6.942,0,0,0,7.21,38.439H31.235a7.22,7.22,0,0,0,7.207-7.208V7.207A6.943,6.943,0,0,0,36.327,2.114ZM11.715,32.183H5.934V14.815h5.781V32.183ZM11.19,11.6a3.292,3.292,0,0,1-2.378.863H8.787A3.181,3.181,0,0,1,6.472,11.6a2.863,2.863,0,0,1-.889-2.14A2.816,2.816,0,0,1,6.5,7.307a3.332,3.332,0,0,1,2.365-.851,3.2,3.2,0,0,1,2.327.851,2.958,2.958,0,0,1,.9,2.152A2.846,2.846,0,0,1,11.19,11.6ZM32.511,32.183H26.73V22.9q0-3.928-2.9-3.929a2.832,2.832,0,0,0-1.852.613,3.851,3.851,0,0,0-1.126,1.489,4.128,4.128,0,0,0-.175,1.4v9.71H14.893q.075-15.716,0-17.368h5.781v2.452a5.806,5.806,0,0,1,5.18-2.853,6.265,6.265,0,0,1,4.83,1.977q1.827,1.977,1.827,5.831v9.961Z"
+                  transform="translate(-0.003 0)" />
+              </svg>
+            </a>
+          </li>
+          <li class="navbar__icon">
+            <a href="#" role='github'>
+              <svg xmlns="http://www.w3.org/2000/svg" width="38.439" height="38.439" viewBox="0 0 38.439 38.439">
+                <g transform="translate(0 0)">
+                  <path d="M154.466,352.518q-.4.075-.351.375t.45.2q.4-.1.35-.35Q154.867,352.468,154.466,352.518Z"
+                    transform="translate(-140.602 -321.612)" />
+                  <path
+                    d="M137.73,354.815c-.267,0-.4.091-.4.275q0,.325.425.275.4,0,.4-.275Q138.156,354.765,137.73,354.815Z"
+                    transform="translate(-125.293 -323.708)" />
+                  <path
+                    d="M119.431,351.921q-.1.275.325.375.375.15.475-.15.075-.275-.325-.4C119.656,351.68,119.5,351.737,119.431,351.921Z"
+                    transform="translate(-108.945 -320.89)" />
+                  <path
+                    d="M36.324,2.114A6.942,6.942,0,0,0,31.232,0H7.207A6.943,6.943,0,0,0,2.114,2.114,6.943,6.943,0,0,0,0,7.207V31.232a6.942,6.942,0,0,0,2.114,5.092,6.942,6.942,0,0,0,5.093,2.115h5.606a6.768,6.768,0,0,0,.826-.037.969.969,0,0,0,.55-.326,1.166,1.166,0,0,0,.275-.838q0-.075-.013-1.7t-.013-2.578l-.576.1a7.366,7.366,0,0,1-1.389.088,10.687,10.687,0,0,1-1.739-.175,3.9,3.9,0,0,1-1.677-.75,3.176,3.176,0,0,1-1.1-1.539l-.25-.576a6.252,6.252,0,0,0-.788-1.276,3.02,3.02,0,0,0-1.089-.951l-.175-.125a1.84,1.84,0,0,1-.325-.3A1.391,1.391,0,0,1,5.1,27.1q-.075-.176.125-.288a1.627,1.627,0,0,1,.726-.112l.5.075a3.648,3.648,0,0,1,1.239.6,4.039,4.039,0,0,1,1.214,1.3A4.41,4.41,0,0,0,10.3,30.242a2.945,2.945,0,0,0,1.639.538,7.11,7.11,0,0,0,1.426-.125,4.982,4.982,0,0,0,1.126-.376A4.056,4.056,0,0,1,15.715,27.7a17.137,17.137,0,0,1-2.565-.451,10.223,10.223,0,0,1-2.352-.976A6.735,6.735,0,0,1,8.783,24.6,8.061,8.061,0,0,1,7.47,21.971a12.5,12.5,0,0,1-.513-3.754,7.3,7.3,0,0,1,1.977-5.155,6.728,6.728,0,0,1,.175-5.105,3.507,3.507,0,0,1,2.152.338,15.093,15.093,0,0,1,2.09.963q.663.4,1.064.676a18.068,18.068,0,0,1,9.61,0l.951-.6a13.463,13.463,0,0,1,2.3-1.1,3.278,3.278,0,0,1,2.027-.275,6.662,6.662,0,0,1,.2,5.105,7.3,7.3,0,0,1,1.977,5.155,12.618,12.618,0,0,1-.513,3.766,7.732,7.732,0,0,1-1.326,2.628,7,7,0,0,1-2.027,1.664,10.209,10.209,0,0,1-2.353.976A17.125,17.125,0,0,1,22.7,27.7,4.457,4.457,0,0,1,24,31.256v5.981a1.611,1.611,0,0,0,.125.688.691.691,0,0,0,.4.363,2.218,2.218,0,0,0,.488.125,5.619,5.619,0,0,0,.613.025h5.606a7.22,7.22,0,0,0,7.207-7.208V7.207A6.944,6.944,0,0,0,36.324,2.114Z"
+                    transform="translate(0 0)" />
+                  <path d="M86,318.567q-.175.125.05.4.251.25.4.075.175-.125-.05-.4Q86.146,318.417,86,318.567Z"
+                    transform="translate(-78.388 -290.589)" />
+                  <path
+                    d="M77.194,311.239q-.075.176.175.3a.214.214,0,0,0,.325-.05q.075-.176-.175-.3Q77.269,311.114,77.194,311.239Z"
+                    transform="translate(-70.412 -283.886)" />
+                  <path
+                    d="M94.472,329.691q-.225.125,0,.45t.425.175q.225-.175,0-.476C94.765,329.624,94.623,329.573,94.472,329.691Z"
+                    transform="translate(-86.089 -300.736)" />
+                  <path
+                    d="M104.681,342.171c-.15.134-.117.292.1.476q.3.3.5.074.2-.2-.1-.475Q104.881,341.947,104.681,342.171Z"
+                    transform="translate(-95.421 -312.091)" />
+                </g>
+              </svg>
+            </a>
+          </li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+  <section class="intro">
+    <div class="intro__container">
+      <div class="intro__left">
+        <div class="intro__content">
+          <h1>JavaScript Enthusiast <br> FullStack Engineer <br> Mobile Developer</h1>
+          <p>I am Isaac Anyimiah</p>
+          <svg class="intro__scroll-interaction" id="Component_4_1" data-name="Component 4 – 1"
+            xmlns="http://www.w3.org/2000/svg" width="29" height="47" viewBox="0 0 29 47">
+            <circle id="Ellipse_1" data-name="Ellipse 1" cx="6.5" cy="6.5" r="6.5" transform="translate(8 8)"
+              fill="#f8f8f8" />
+            <g id="Rectangle_3" data-name="Rectangle 3" fill="none" stroke="#f8f8f8" stroke-width="4">
+              <rect width="29" height="47" rx="14.5" stroke="none" />
+              <rect x="2" y="2" width="25" height="43" rx="12.5" fill="none" />
+            </g>
+          </svg>
+
+          <svg class="intro__hero" xmlns="http://www.w3.org/2000/svg" width="640" height="640" viewBox="0 0 640 640">
+            <rect width="160" height="160" rx="80" transform="translate(320)" fill="#682faa" />
+            <rect width="160" height="160" rx="34" transform="translate(160 160)" fill="#8bffef" />
+            <rect width="160" height="160" rx="34" transform="translate(480 160)" fill="#682faa" opacity="0.62" />
+            <rect width="160" height="160" rx="34" transform="translate(320 320)" fill="#682faa" />
+            <rect width="160" height="160" rx="34" transform="translate(0 320)" fill="#fff" opacity="0.45" />
+            <rect width="160" height="160" rx="80" transform="translate(160 480)" fill="#fff" />
+          </svg>
+        </div>
+      </div>
+      <div class="intro__right">
+        &nbsp;
+      </div>
+    </div>
+  </section>
+  <svg class="intro__bg-circle" xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500">
+    <rect width="500" height="500" rx="391.5" fill="#8bffef" opacity="0.09" />
+  </svg>
+  <section class="featured" id='featured'>
+    <div class="featured__container">
+      <div class="featured__left">
+        <div class="featured__heading">
+          <h2 class="h--sub">Featured Project</h2>
+          <h1>My Amazon Clone</h1>
+        </div>
+        <p class="featured__content">
+          My own custom simple build of amazon. Built with reactJS with the Context API with a backend built with
+          expressJS and firebase. Stripe was integrated to simulate payment using the sandbox number
+          <span class='t--mono'>4242 4242 4242 4242</span>.
+        </p>
+        <a href="#" class="btn--link">VISIT</a>
+        <svg class='featured__bg-figures' id="Component_2_1" data-name="Component 2 – 1"
+          xmlns="http://www.w3.org/2000/svg" width="640" height="584" viewBox="0 0 640 584">
+          <path id="Path_14" data-name="Path 14"
+            d="M0,38.443s17.867,16.4,39.722,25.276,47.7,10.236,47.7,10.236a221.657,221.657,0,0,0-5.513,41.974c-.631,22.334,2.991,47.36,2.991,47.36.052.019-31.109-20.824-52.333-52.035S.765,38.1,0,38.443Z"
+            transform="translate(28 201)" fill="#8bffef" opacity="0.24" />
+          <rect id="Rectangle_11" data-name="Rectangle 11" width="515" height="511" rx="255.5"
+            transform="translate(125 73)" fill="#8bffef" opacity="0.15" />
+          <rect id="Rectangle_10" data-name="Rectangle 10" width="267" height="267" rx="133.5" fill="#8bffef"
+            opacity="0.47" />
+        </svg>
+
+      </div>
+      <div class="featured__right">
+        <img src="./images/my-amazon-clone.png" alt="featured project thumbnail">
+      </div>
+    </div>
+  </section>
+  <section class="my-skills" id="my-skills">
+    <div class="my-skills__container">
+      <div class="my-skills__container__inner">
+        <div class="my-skills__heading">
+          <h2 class="h--sub">frontend | backend | mobile</h2>
+          <h1>My Skills</h1>
+        </div>
+        <ul class="my-skills__list">
+          <li class="my-skills__item">
+            <img src="./images/logo-reactnative.png" alt="react native logo">
+            <div class="my-skills__item__detail">
+              <p>React Native</p>
+              <div class="progress-bar">
+                <div class="progress-bar__fill" data-fill="80"></div>
+                <span class="progress-bar__value" role='progress value'>80%</span>
+              </div>
+            </div>
+          </li>
+          <li class="my-skills__item">
+            <img src="./images/logo-nextjs.png" alt="next js logo">
+            <div class="my-skills__item__detail">
+              <p>Next jS</p>
+              <div class="progress-bar">
+                <div class="progress-bar__fill" data-fill="74"></div>
+                <span class="progress-bar__value" role='progress value'>74%</span>
+              </div>
+            </div>
+          </li>
+          <li class="my-skills__item">
+            <img src="./images/logo-typscript.png" alt="typescript logo">
+            <div class="my-skills__item__detail">
+              <p>Typescript</p>
+              <div class="progress-bar">
+                <div class="progress-bar__fill" data-fill="90"></div>
+                <span class="progress-bar__value" role='progress value'>90%</span>
+              </div>
+            </div>
+          </li>
+          <li class="my-skills__item">
+            <img src="./images/logo-adobexd.png" alt="adobexd logo">
+            <div class="my-skills__item__detail">
+              <p>Adobe XD</p>
+              <div class="progress-bar">
+                <div class="progress-bar__fill" data-fill="63"></div>
+                <span class="progress-bar__value" role='progress value'>63%</span>
+              </div>
+            </div>
+          </li>
+          <li class="my-skills__item">
+            <img src="./images/logo-reactjs.png" alt="react js logo">
+            <div class="my-skills__item__detail">
+              <p>React jS</p>
+              <div class="progress-bar">
+                <div class="progress-bar__fill" data-fill="87"></div>
+                <span class="progress-bar__value" role='progress value'>87%</span>
+              </div>
+            </div>
+          </li>
+          <li class="my-skills__item">
+            <img src="./images/logo-graphql.png" alt="graphql logo">
+            <div class="my-skills__item__detail">
+              <p>Graphql</p>
+              <div class="progress-bar">
+                <div class="progress-bar__fill" data-fill="25"></div>
+                <span class="progress-bar__value" role='progress value'>25%</span>
+              </div>
+            </div>
+          </li>
+          <li class="my-skills__item">
+            <img src="./images/logo-gcp.png" alt="gcp logo">
+            <div class="my-skills__item__detail">
+              <p>Google Cloud Platform</p>
+              <div class="progress-bar">
+                <div class="progress-bar__fill" data-fill="39"></div>
+                <span class="progress-bar__value" role='progress value'>39%</span>
+              </div>
+            </div>
+          </li>
+          <li class="my-skills__item">
+            <img src="./images/logo-firebase.png" alt="firebase logo">
+            <div class="my-skills__item__detail">
+              <p>Firebase</p>
+              <div class="progress-bar">
+                <div class="progress-bar__fill" data-fill="79"></div>
+                <span class="progress-bar__value" role='progress value'>79%</span>
+              </div>
+            </div>
+          </li>
+          <li class="my-skills__item">
+            <img src="./images/logo-css.png" alt="css logo">
+            <div class="my-skills__item__detail">
+              <p>CSS / SCSS</p>
+              <div class="progress-bar">
+                <div class="progress-bar__fill" data-fill="85"></div>
+                <span class="progress-bar__value" role='progress value'>85%</span>
+              </div>
+            </div>
+          </li>
+          <li class="my-skills__item">
+            <img src="./images/logo-nodejs.png" alt="node js logo">
+            <div class="my-skills__item__detail">
+              <p>Node jS</p>
+              <div class="progress-bar">
+                <div class="progress-bar__fill" data-fill="70"></div>
+                <span class="progress-bar__value" role='progress value'>82%</span>
+              </div>
+            </div>
+          </li>
+          <li class="my-skills__item">
+            <img src="./images/logo-nestjs.png" alt="nestjs logo">
+            <div class="my-skills__item__detail">
+              <p>Nest JS</p>
+              <div class="progress-bar">
+                <div class="progress-bar__fill" data-fill="79"></div>
+                <span class="progress-bar__value" role='progress value'>79%</span>
+              </div>
+            </div>
+          </li>
+          <li class="my-skills__item">
+            <img src="./images/logo-circleci.png" alt="circleci logo">
+            <div class="my-skills__item__detail">
+              <p>Circle CI</p>
+              <div class="progress-bar">
+                <div class="progress-bar__fill" data-fill="30"></div>
+                <span class="progress-bar__value" role='progress value'>30%</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <svg class="my-skills__bg-circle" xmlns="http://www.w3.org/2000/svg" width="150.129" height="300"
+      viewBox="0 0 150.129 300">
+      <path id="body-semi-circle" d="M150,0c0,18.525.291,149.249,0,150s0,115.738,0,150A150,150,0,0,1,150,0Z"
+        fill="#8bffef" opacity="0.09" />
+    </svg>
+
+    <svg class="my-skills__bg-circle--2" xmlns="http://www.w3.org/2000/svg" width="300" height="300"
+      viewBox="0 0 300 300">
+      <rect width="300" height="300" rx="391.5" fill="#8bffef" opacity="0.09" />
+    </svg>
+  </section>
+  <section class="my-works" id="my-works">
+    <div class="my-works__container">
+      <div class="my-works__container__inner">
+        <ul class="my-works__list">
+          <li class="my-works__item">
+            <div class="my-works__item__heading">
+              <h2 class="h--sub">SPOTIFY API | REACTJS | CONTEXT API | TYPESCRIPT | VERCEL</h2>
+              <h1>My Spotify Clone</h1>
+            </div>
+            <div class="my-works__item__content">
+              <img src="./images/spotify clone.png" alt="Spotify clone" class="my-works__item__thumbnail">
+              <div class="my-works__item__detail">
+                <p>My own custom simple build of amazon. Built with reactJS with the Context API with a backend built
+                  with expressJS and firebase. Stripe was integrated to simulate payment using the sandbox number
+                  <span>4242 4242 4242 4242</span>.</p>
+                <a href="#" class="btn--link">VISIT</a>
+              </div>
+            </div>
+          </li>
+          <li class="my-works__item">
+            <div class="my-works__item__heading">
+              <h2 class="h--sub">SPOTIFY API | REACTJS | CONTEXT API | TYPESCRIPT | VERCEL</h2>
+              <h1>My Spotify Clone</h1>
+            </div>
+            <div class="my-works__item__content">
+              <img src="./images/spotify clone.png" alt="Spotify clone" class="my-works__item__thumbnail">
+              <div class="my-works__item__detail">
+                <p>My own custom simple build of amazon. Built with reactJS with the Context API with a backend built
+                  with expressJS and firebase. Stripe was integrated to simulate payment using the sandbox number
+                  <span>4242 4242 4242 4242</span>.</p>
+                <a href="#" class="btn--link">VISIT</a>
+              </div>
+            </div>
+          </li>
+          <li class="my-works__item">
+            <div class="my-works__item__heading">
+              <h2 class="h--sub">SPOTIFY API | REACTJS | CONTEXT API | TYPESCRIPT | VERCEL</h2>
+              <h1>My Spotify Clone</h1>
+            </div>
+            <div class="my-works__item__content">
+              <img src="./images/spotify clone.png" alt="Spotify clone" class="my-works__item__thumbnail">
+              <div class="my-works__item__detail">
+                <p>My own custom simple build of amazon. Built with reactJS with the Context API with a backend built
+                  with expressJS and firebase. Stripe was integrated to simulate payment using the sandbox number
+                  <span>4242 4242 4242 4242</span>.</p>
+                <a href="#" class="btn--link">VISIT</a>
+              </div>
+            </div>
+          </li>
+          <li class="my-works__item">
+            <div class="my-works__item__heading">
+              <h2 class="h--sub">SPOTIFY API | REACTJS | CONTEXT API | TYPESCRIPT | VERCEL</h2>
+              <h1>My Spotify Clone</h1>
+            </div>
+            <div class="my-works__item__content">
+              <img src="./images/spotify clone.png" alt="Spotify clone" class="my-works__item__thumbnail">
+              <div class="my-works__item__detail">
+                <p>My own custom simple build of amazon. Built with reactJS with the Context API with a backend built
+                  with expressJS and firebase. Stripe was integrated to simulate payment using the sandbox number
+                  <span>4242 4242 4242 4242</span>.</p>
+                <a href="#" class="btn--link">VISIT</a>
+              </div>
+            </div>
+          </li>
+          <li class="my-works__item">
+            <div class="my-works__item__heading">
+              <h2 class="h--sub">SPOTIFY API | REACTJS | CONTEXT API | TYPESCRIPT | VERCEL</h2>
+              <h1>My Spotify Clone</h1>
+            </div>
+            <div class="my-works__item__content">
+              <img src="./images/spotify clone.png" alt="Spotify clone" class="my-works__item__thumbnail">
+              <div class="my-works__item__detail">
+                <p>My own custom simple build of amazon. Built with reactJS with the Context API with a backend built
+                  with expressJS and firebase. Stripe was integrated to simulate payment using the sandbox number
+                  <span>4242 4242 4242 4242</span>.</p>
+                <a href="#" class="btn--link">VISIT</a>
+              </div>
+            </div>
+          </li>
+          <li class="my-works__item">
+            <div class="my-works__item__heading">
+              <h2 class="h--sub">SPOTIFY API | REACTJS | CONTEXT API | TYPESCRIPT | VERCEL</h2>
+              <h1>My Spotify Clone</h1>
+            </div>
+            <div class="my-works__item__content">
+              <img src="./images/spotify clone.png" alt="Spotify clone" class="my-works__item__thumbnail">
+              <div class="my-works__item__detail">
+                <p>My own custom simple build of amazon. Built with reactJS with the Context API with a backend built
+                  with expressJS and firebase. Stripe was integrated to simulate payment using the sandbox number
+                  <span>4242 4242 4242 4242</span>.</p>
+                <a href="#" class="btn--link">VISIT</a>
+              </div>
+            </div>
+          </li>
+          <li class="my-works__item">
+            <div class="my-works__item__heading">
+              <h2 class="h--sub">SPOTIFY API | REACTJS | CONTEXT API | TYPESCRIPT | VERCEL</h2>
+              <h1>My Spotify Clone</h1>
+            </div>
+            <div class="my-works__item__content">
+              <img src="./images/spotify clone.png" alt="Spotify clone" class="my-works__item__thumbnail">
+              <div class="my-works__item__detail">
+                <p>My own custom simple build of amazon. Built with reactJS with the Context API with a backend built
+                  with expressJS and firebase. Stripe was integrated to simulate payment using the sandbox number
+                  <span>4242 4242 4242 4242</span>.</p>
+                <a href="#" class="btn--link">VISIT</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="contact" id="contact">
+    <div class="contact__container">
+      <h1 class="contact__heading">CONTACT ME</h1>
+      <div class="contact__content">
+        <form class="contact__form">
+          <div class="form__group">
+            <label for="name">Name</label>
+            <input class="form__input-control" name="name" type="text" id='name'>
+          </div>
+          <div class="form__group">
+            <label for="email">E-mail</label>
+            <input class="form__input-control" type="email" name="email" id='email'>
+          </div>
+          <div class="form__group">
+            <label for="subject">Subject</label>
+            <input class="form__input-control" type="text" name="subject" id='subject'>
+          </div>
+          <div class="form__group">
+            <label for="message">Message</label>
+            <textarea class="form__input-control" style="resize: vertical;" name="message" name="message" id="message"
+              rows="4"></textarea>
+          </div>
+        </form>
+        <div class="contact__details">
+          <h2 class="h--sub">EMAILS AND PHONES</h2>
+          <p class="contact__details__emails">
+            ianyimiah@gmail.com <br>
+            iandev096@gmail.com
+          </p>
+          <p class="contact__details__phones">
+            +233 20 9060 500 <br>
+            +233 55 7550 220
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer__icons">
+      <a href="#" role='linkedin'>
+        <svg xmlns="http://www.w3.org/2000/svg" width="38.439" height="38.439" viewBox="0 0 38.439 38.439">
+          <g id="_003-linkedin-sign" data-name="003-linkedin-sign" opacity="0.68">
+            <path id="Path_5" data-name="Path 5"
+              d="M36.327,2.114A6.941,6.941,0,0,0,31.235,0H7.21A6.943,6.943,0,0,0,2.117,2.114,6.943,6.943,0,0,0,0,7.207V31.232a6.943,6.943,0,0,0,2.114,5.093A6.942,6.942,0,0,0,7.21,38.439H31.235a7.22,7.22,0,0,0,7.207-7.208V7.207A6.943,6.943,0,0,0,36.327,2.114ZM11.715,32.183H5.934V14.815h5.781V32.183ZM11.19,11.6a3.292,3.292,0,0,1-2.378.863H8.787A3.181,3.181,0,0,1,6.472,11.6a2.863,2.863,0,0,1-.889-2.14A2.816,2.816,0,0,1,6.5,7.307a3.332,3.332,0,0,1,2.365-.851,3.2,3.2,0,0,1,2.327.851,2.958,2.958,0,0,1,.9,2.152A2.846,2.846,0,0,1,11.19,11.6ZM32.511,32.183H26.73V22.9q0-3.928-2.9-3.929a2.832,2.832,0,0,0-1.852.613,3.851,3.851,0,0,0-1.126,1.489,4.128,4.128,0,0,0-.175,1.4v9.71H14.893q.075-15.716,0-17.368h5.781v2.452a5.806,5.806,0,0,1,5.18-2.853,6.265,6.265,0,0,1,4.83,1.977q1.827,1.977,1.827,5.831v9.961Z"
+              transform="translate(-0.003 0)" fill="#fff" />
+          </g>
+        </svg></a>
+      <a href="#" role='github'>
+        <svg xmlns="http://www.w3.org/2000/svg" width="38.439" height="38.439" viewBox="0 0 38.439 38.439">
+          <g id="_006-github-sign" data-name="006-github-sign" opacity="0.68">
+            <g id="Group_2" data-name="Group 2" transform="translate(0 0)">
+              <path id="Path_6" data-name="Path 6"
+                d="M154.466,352.518q-.4.075-.351.375t.45.2q.4-.1.35-.35Q154.867,352.468,154.466,352.518Z"
+                transform="translate(-140.602 -321.612)" fill="#fff" />
+              <path id="Path_7" data-name="Path 7"
+                d="M137.73,354.815c-.267,0-.4.091-.4.275q0,.325.425.275.4,0,.4-.275Q138.156,354.765,137.73,354.815Z"
+                transform="translate(-125.293 -323.708)" fill="#fff" />
+              <path id="Path_8" data-name="Path 8"
+                d="M119.431,351.921q-.1.275.325.375.375.15.475-.15.075-.275-.325-.4C119.656,351.68,119.5,351.737,119.431,351.921Z"
+                transform="translate(-108.945 -320.89)" fill="#fff" />
+              <path id="Path_9" data-name="Path 9"
+                d="M36.324,2.114A6.942,6.942,0,0,0,31.232,0H7.207A6.943,6.943,0,0,0,2.114,2.114,6.943,6.943,0,0,0,0,7.207V31.232a6.942,6.942,0,0,0,2.114,5.092,6.942,6.942,0,0,0,5.093,2.115h5.606a6.768,6.768,0,0,0,.826-.037.969.969,0,0,0,.55-.326,1.166,1.166,0,0,0,.275-.838q0-.075-.013-1.7t-.013-2.578l-.576.1a7.366,7.366,0,0,1-1.389.088,10.687,10.687,0,0,1-1.739-.175,3.9,3.9,0,0,1-1.677-.75,3.176,3.176,0,0,1-1.1-1.539l-.25-.576a6.252,6.252,0,0,0-.788-1.276,3.02,3.02,0,0,0-1.089-.951l-.175-.125a1.84,1.84,0,0,1-.325-.3A1.391,1.391,0,0,1,5.1,27.1q-.075-.176.125-.288a1.627,1.627,0,0,1,.726-.112l.5.075a3.648,3.648,0,0,1,1.239.6,4.039,4.039,0,0,1,1.214,1.3A4.41,4.41,0,0,0,10.3,30.242a2.945,2.945,0,0,0,1.639.538,7.11,7.11,0,0,0,1.426-.125,4.982,4.982,0,0,0,1.126-.376A4.056,4.056,0,0,1,15.715,27.7a17.137,17.137,0,0,1-2.565-.451,10.223,10.223,0,0,1-2.352-.976A6.735,6.735,0,0,1,8.783,24.6,8.061,8.061,0,0,1,7.47,21.971a12.5,12.5,0,0,1-.513-3.754,7.3,7.3,0,0,1,1.977-5.155,6.728,6.728,0,0,1,.175-5.105,3.507,3.507,0,0,1,2.152.338,15.093,15.093,0,0,1,2.09.963q.663.4,1.064.676a18.068,18.068,0,0,1,9.61,0l.951-.6a13.463,13.463,0,0,1,2.3-1.1,3.278,3.278,0,0,1,2.027-.275,6.662,6.662,0,0,1,.2,5.105,7.3,7.3,0,0,1,1.977,5.155,12.618,12.618,0,0,1-.513,3.766,7.732,7.732,0,0,1-1.326,2.628,7,7,0,0,1-2.027,1.664,10.209,10.209,0,0,1-2.353.976A17.125,17.125,0,0,1,22.7,27.7,4.457,4.457,0,0,1,24,31.256v5.981a1.611,1.611,0,0,0,.125.688.691.691,0,0,0,.4.363,2.218,2.218,0,0,0,.488.125,5.619,5.619,0,0,0,.613.025h5.606a7.22,7.22,0,0,0,7.207-7.208V7.207A6.944,6.944,0,0,0,36.324,2.114Z"
+                transform="translate(0 0)" fill="#fff" />
+              <path id="Path_10" data-name="Path 10"
+                d="M86,318.567q-.175.125.05.4.251.25.4.075.175-.125-.05-.4Q86.146,318.417,86,318.567Z"
+                transform="translate(-78.388 -290.589)" fill="#fff" />
+              <path id="Path_11" data-name="Path 11"
+                d="M77.194,311.239q-.075.176.175.3a.214.214,0,0,0,.325-.05q.075-.176-.175-.3Q77.269,311.114,77.194,311.239Z"
+                transform="translate(-70.412 -283.886)" fill="#fff" />
+              <path id="Path_12" data-name="Path 12"
+                d="M94.472,329.691q-.225.125,0,.45t.425.175q.225-.175,0-.476C94.765,329.624,94.623,329.573,94.472,329.691Z"
+                transform="translate(-86.089 -300.736)" fill="#fff" />
+              <path id="Path_13" data-name="Path 13"
+                d="M104.681,342.171c-.15.134-.117.292.1.476q.3.3.5.074.2-.2-.1-.475Q104.881,341.947,104.681,342.171Z"
+                transform="translate(-95.421 -312.091)" fill="#fff" />
+            </g>
+          </g>
+        </svg></a>
+
+    </div>
+    <p class="footer__copyright">© Designed by Isaac Anyimiah</p>
+  </footer>
+  <a href="#top">
+    <svg class="scroll-top" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100"
+      height="100" viewBox="0 0 100 100">
+      <defs>
+        <filter id="Rectangle_70" x="0" y="0" width="100" height="100" filterUnits="userSpaceOnUse">
+          <feOffset dy="3" input="SourceAlpha" />
+          <feGaussianBlur stdDeviation="6" result="blur" />
+          <feFlood flood-color="#2e2a2a" flood-opacity="0.741" />
+          <feComposite operator="in" in2="blur" />
+          <feComposite in="SourceGraphic" />
+        </filter>
+      </defs>
+      <g id="Component_4_1" data-name="Component 4 – 1" transform="translate(18 15)">
+        <g transform="matrix(1, 0, 0, 1, -18, -15)" filter="url(#Rectangle_70)">
+          <rect id="Rectangle_70-2" data-name="Rectangle 70" width="64" height="64" rx="32" transform="translate(18 15)"
+            fill="#682faa" />
+        </g>
+        <g id="up-arrow" transform="translate(14.508 -38.005)">
+          <path id="Path_55" data-name="Path 55"
+            d="M35.369,76.424,18.686,59.742a1.125,1.125,0,0,0-1.646,0L.358,76.424a1.126,1.126,0,0,0,0,1.647L2.148,79.86a1.126,1.126,0,0,0,1.647,0L17.863,65.792,31.932,79.861a1.128,1.128,0,0,0,1.647,0l1.79-1.79a1.128,1.128,0,0,0,0-1.647Z"
+            transform="translate(0)" fill="#f8f8f8" />
+        </g>
+      </g>
+    </svg></a>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js"
+    integrity="sha512-Gk+uNk8NWN235mIkS6B7/424TsDuPDaoAsUekJCKTWLKP6wlaPv+PBGfO7dbvZeibVPGW+mYidz0vL0XaWwz4w=="
+    crossorigin="anonymous"></script>
+  <script src="js/progress-bar.js"></script>
+  <script src="js/menu.js"></script>
+</body>
+
+</html>

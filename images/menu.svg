@@ -1,0 +1,5 @@
+<svg id="menu" xmlns="http://www.w3.org/2000/svg" width="80.73" height="60.463" viewBox="0 0 80.73 60.463">
+  <path id="top" d="M73.3,64.267H7.429a7.432,7.432,0,0,0,0,14.864H73.3a7.432,7.432,0,0,0,0-14.864Z" transform="translate(0 -64.267)" fill="#f6f6f6"/>
+  <path id="mid" d="M73.3,208.867H7.429a7.432,7.432,0,0,0,0,14.863H73.3a7.432,7.432,0,0,0,0-14.863Z" transform="translate(0 -186.067)" fill="#f6f6f6"/>
+  <path id="bottom" d="M73.3,353.467H7.429a7.432,7.432,0,0,0,0,14.863H73.3a7.432,7.432,0,0,0,0-14.863Z" transform="translate(0 -307.867)" fill="#f6f6f6"/>
+</svg>

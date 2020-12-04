@@ -1,0 +1,72 @@
+.my-skills {
+  position: relative;
+
+  &__container {
+    @include container;
+    @include section-padding-y;
+
+    z-index: 10;
+    position: relative;
+    background: #682faa;
+    color: white;
+    border-radius: 54px;
+    justify-content: flex-start;
+    overflow: hidden;
+    &__inner {
+      flex: 1;
+    }
+  }
+
+  &__heading {
+    // margin-bottom: 50px;
+
+    h2 {
+      color: $tertiary;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex: 1;
+
+    & > *:nth-child(even) {
+      margin-left: auto;
+    }
+  }
+
+  &__item {
+    flex: 0.46;
+    min-width: 46%;
+    display: flex;
+    margin-top: 50px;
+
+    img {
+      width: 55px;
+      object-fit: contain;
+      margin-right: 10px;
+    }
+
+    &__detail {
+      flex: 1;
+
+      p {
+        text-transform: uppercase;
+        font-weight: 300;
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  &__bg-circle {
+    position: absolute;
+    top: -88px;
+    right: 0;
+  }
+  &__bg-circle--2 {
+    position: absolute;
+    bottom: -88px;
+    left: -174px;
+  }
+}

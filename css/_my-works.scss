@@ -1,0 +1,42 @@
+.my-works {
+  &__container {
+    @include container;
+    @include section-padding-y;
+
+    &__inner {
+      flex: 1;
+    }
+  }
+
+  &__list {
+    & > *:not(:last-child) {
+      margin-bottom: 90px;
+    }
+  }
+
+  &__item {
+    &__heading {
+      margin-bottom: 30px;
+    }
+
+    &__content {
+      color: $darkgray;
+      display: flex;
+      align-items: center;
+      // flex-wrap: wrap;
+      img {
+        flex: 0.5;
+        max-width: 50%;
+        margin-right: 50px;
+
+        @include project-thumb;
+      }
+    }
+
+    &__detail {
+      p {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
