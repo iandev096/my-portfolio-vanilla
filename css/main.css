@@ -727,9 +727,37 @@ body {
   }
 }
 
+.btn {
+  outline: 0;
+}
+
+.btn:focus {
+  outline: 0;
+}
+
 .btn--link {
   font-weight: 700;
   letter-spacing: 1.7px;
+  color: #682faa;
+}
+
+.btn--outline {
+  color: #f8f8f8;
+  font-weight: 700;
+  letter-spacing: 1.7px;
+  padding: 8px 19px;
+  border: 1px solid #f8f8f8;
+  border-radius: 25px;
+  background-color: transparent;
+  cursor: pointer;
+  width: 100%;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.btn--outline:hover, .btn--outline:focus {
+  color: #682faa;
+  background-color: #f8f8f8;
 }
 
 .form__group {
@@ -1206,6 +1234,10 @@ body {
   .contact__details {
     display: none;
   }
+}
+
+.contact .btn--outline {
+  margin-top: 40px;
 }
 
 .footer {

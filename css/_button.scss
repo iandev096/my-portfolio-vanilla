@@ -1,6 +1,30 @@
 .btn {
+  outline: 0;
+  &:focus {
+    outline: 0;
+  }
   &--link {
     font-weight: 700;
     letter-spacing: 1.7px;
+    color: $primary;
+  }
+
+  &--outline {
+    color: $light;
+    font-weight: 700;
+    letter-spacing: 1.7px;
+    padding: 8px 19px;
+    border: 1px solid $light;
+    border-radius: 25px;
+    background-color: transparent;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.3s ease;
+
+    &:hover,
+    &:focus {
+      color: $primary;
+      background-color: $light;
+    }
   }
 }
