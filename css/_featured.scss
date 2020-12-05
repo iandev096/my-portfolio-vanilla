@@ -1,8 +1,8 @@
 .featured {
-  width: 100vw;
+  width: $swidth;
   overflow: hidden;
   background-color: $lightbg;
-  width: 100vw;
+  width: $swidth;
 
   &__container {
     @include container;
@@ -10,6 +10,10 @@
 
     position: relative;
     overflow: hidden;
+
+    @include bp(sm) {
+      flex-direction: column;
+    }
   }
 
   &__left {
@@ -18,6 +22,12 @@
     & > *:not(svg) {
       z-index: 10;
       position: relative;
+    }
+
+    @include bp(sm) {
+      .btn--link {
+        display: none;
+      }
     }
   }
 
@@ -37,6 +47,10 @@
   &__content {
     color: $gray;
     margin-bottom: 12px;
+
+    @include bp(sm) {
+      margin: 20px 0 40px;
+    }
   }
 
   &__bg-figures {
@@ -45,5 +59,11 @@
     left: 21px;
     height: auto;
     width: 344px;
+
+    @include bp(sm) {
+      top: 96px;
+      left: 21px;
+      width: 183px;
+    }
   }
 }

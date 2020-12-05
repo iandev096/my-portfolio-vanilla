@@ -23,13 +23,29 @@
       color: $darkgray;
       display: flex;
       align-items: center;
-      // flex-wrap: wrap;
+
+      @include bp(sm) {
+        flex-wrap: wrap;
+      }
+
       img {
         flex: 0.5;
         max-width: 50%;
         margin-right: 50px;
 
         @include project-thumb;
+
+        @include bp(sm) {
+          margin-right: initial;
+          max-width: 100%;
+          flex: 1;
+          margin-bottom: 32px;
+        }
+      }
+
+      .btn--link {
+        display: block;
+        text-align: right;
       }
     }
 

@@ -24,6 +24,10 @@
 
   &__form {
     margin-right: 80px;
+
+    @include bp(xs) {
+      margin-right: initial;
+    }
   }
 
   &__details {
@@ -41,6 +45,10 @@
 
     & > *:not(:last-child) {
       margin-bottom: 14px;
+    }
+
+    @include bp(sm) {
+      display: none;
     }
   }
 }

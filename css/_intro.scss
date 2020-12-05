@@ -1,8 +1,14 @@
 .intro {
-  width: 100vw;
+  width: $swidth;
   background: linear-gradient(90deg, $primary 0%, $primary 50%, $lightbg 50%);
   overflow: hidden;
   border-bottom-left-radius: 54px;
+
+  @include bp(md) {
+    background: $primary;
+    background: linear-gradient(to bottom, $secondary 0%, $primary 100%);
+    border-bottom-right-radius: 54px;
+  }
 
   &__container {
     @include container;
@@ -16,6 +22,10 @@
     max-width: 800px;
     border-bottom-right-radius: 54px;
     z-index: 10;
+
+    @include bp(md) {
+      background: transparent;
+    }
   }
 
   &__right {
@@ -27,6 +37,10 @@
     height: 100%;
     width: 100%;
     max-width: 400px;
+
+    @include bp(md) {
+      display: none;
+    }
   }
 
   &__content {
@@ -35,19 +49,53 @@
     width: 100%;
     border-bottom-right-radius: 52px;
 
+    @include bp(sm) {
+      padding: 50px 0;
+    }
+
     & > h1 {
       font-size: 269%;
       font-weight: 700;
       color: $light;
+
+      @include bp(sm) {
+        font-size: 230%;
+      }
+      @include bp(xs) {
+        font-size: 200%;
+      }
+      @include bp(xss) {
+        font-size: 7.5vw;
+      }
     }
 
     & > p {
       color: $tertiary;
       padding: 30px 0 37px;
+
+      @include bp(md) {
+        display: none;
+      }
+    }
+  }
+
+  @keyframes circleAnim {
+    from {
+      transform: translate(8px, 8px);
+    }
+
+    to {
+      transform: translate(8px, 25px);
     }
   }
 
   &__scroll-interaction {
+    circle {
+      animation: circleAnim 1.5s infinite alternate-reverse;
+    }
+    @include bp(md) {
+      margin-top: 40px;
+    }
   }
 
   &__hero {
@@ -55,6 +103,10 @@
     width: 403px;
     top: -5px;
     right: -201px;
+
+    @include bp(md) {
+      display: none;
+    }
   }
 
   &__bg-circle {
@@ -62,7 +114,7 @@
     top: 0;
     right: 0;
 
-    @include bp(sm) {
+    @include bp(md) {
       display: none;
     }
   }

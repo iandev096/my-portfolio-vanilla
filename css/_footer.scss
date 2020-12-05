@@ -10,6 +10,11 @@
   border-top-right-radius: 54px;
   border-top-left-radius: 54px;
   margin-top: -50px;
+  text-align: center;
+
+  @include bp(xs) {
+    font-size: 13px;
+  }
 
   svg {
     height: auto;

@@ -6,8 +6,12 @@
 // 600px - phones Portrait - xs
 
 @mixin bp($size) {
-  @if $size == xs {
-    @media (max-width: 600px) {
+  @if $size == xss {
+    @media (max-width: 420px) {
+      @content;
+    }
+  } @else if $size == xs {
+    @media (max-width: 598px) {
       @content;
     }
   } @else if $size == sm {
@@ -36,6 +40,11 @@
     padding-left: $container-padding-xs;
     padding-right: $container-padding-xs;
   }
+
+  @include bp(xss) {
+    padding-left: $container-padding-xss;
+    padding-right: $container-padding-xss;
+  }
 }
 
 @mixin container {
@@ -53,6 +62,11 @@
 @mixin section-padding-y {
   padding-top: 124px;
   padding-bottom: 124px;
+
+  @include bp(sm) {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
 }
 
 @mixin project-thumb {
